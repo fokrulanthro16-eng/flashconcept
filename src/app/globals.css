@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #E6EAE1;
+  --foreground: #111827;
+}
+
+body {
+  background-color: #E6EAE1;
+  color: #111827;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Editorial Serif Heading Accent */
+.font-serif-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E6EAE1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BCC7B5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #12231B;
+}
+
+/* Arch & Oval Portal Frame */
+.arch-portal {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.oval-portal {
+  border-radius: 9999px;
+}
+
+/* Solid High-Contrast Bento Cards */
+.bento-card-white {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 28px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+}
+
+.bento-card-mint {
+  background-color: #F4F7F2;
+  border: 1px solid #DCE4D6;
+  border-radius: 28px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+}
+
+.bento-card-dark {
+  background-color: #12231B;
+  border-radius: 32px;
+  color: #FFFFFF;
+  box-shadow: 0 20px 35px -10px rgba(18, 35, 27, 0.4);
+}
+
+/* Electric Lemon Pill Button */
+.btn-lemon {
+  background-color: #E6F77B;
+  color: #12231B;
+  font-weight: 800;
+  border-radius: 9999px;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-lemon:hover {
+  background-color: #DBED6E;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px -2px rgba(230, 247, 123, 0.6);
+}
+
+.btn-lemon:active {
+  transform: translateY(1px);
+}
+
+/* 3D Flip Card Container */
+.perspective-1000 {
+  perspective: 1200px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
