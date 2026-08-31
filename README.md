@@ -16,6 +16,12 @@
 
 [Explore Live Demo](http://localhost:3000) • [View Architecture](#-system-architecture) • [Devpost Submission](DEVPOST_SUBMISSION.md) • [Contributing](CONTRIBUTING.md)
 
+<br />
+
+<div align="center">
+  <img src="./public/assets/preview.png" alt="FlashConcept UI Preview" width="100%" style="border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+</div>
+
 </div>
 
 ---
@@ -127,7 +133,7 @@ graph TD
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/your-username/flashconcept.git
+git clone https://github.com/fokrulanthro16-eng/flashconcept.git
 cd flashconcept
 npm install
 ```
@@ -154,6 +160,11 @@ npm run start
 
 ```
 nexusmind-protocol/
+├── public/
+│   └── assets/
+│       └── preview.png               # High-resolution Retina UI preview screenshot
+├── scripts/
+│   └── capture-screenshot.js         # Automated Puppeteer screenshot generator
 ├── src/
 │   ├── app/
 │   │   ├── api/
@@ -164,21 +175,28 @@ nexusmind-protocol/
 │   │   └── page.tsx                  # Main unified landing & interactive workstation
 │   ├── components/
 │   │   ├── AttentionMatrixVisualizer.tsx # Interactive Q-K attention token flow & heatmap
-│   │   ├── AudioPlayerButton.tsx         # Web Speech player with 7-bar audio waveform
-│   │   ├── CleanFlashcard.tsx            # 3D flip card with parameter slider & voice quiz
-│   │   ├── ConceptIllustration.tsx       # Dynamic morphing SVG vector illustrations
-│   │   ├── EditorialFooter.tsx           # High-contrast forest green SaaS footer
-│   │   ├── EditorialNavbar.tsx           # Floating pill header with high-contrast links
-│   │   ├── HeroBentoSection.tsx          # Forest green hero card & 3D parallax tilt preview
-│   │   ├── InteractiveBentoGrid.tsx      # 3-step pipeline & telemetry bento showcase
-│   │   ├── LiveMasteryEngine.tsx         # Unified interactive card deck & tab switcher
-│   │   ├── PyTorchMicroSandbox.tsx       # PyTorch MHA module & forward pass simulator
-│   │   └── ShareAction.tsx               # WhatsApp, Telegram, clipboard share popover
+│   │   ├── AudioNarrator.tsx         # Legacy audio module
+│   │   ├── AudioPlayerButton.tsx     # Web Speech player with 7-bar audio waveform
+│   │   ├── CleanFlashcard.tsx        # 3D flip card with parameter slider & voice quiz
+│   │   ├── CognitiveCanvas.tsx       # Interactive node mesh
+│   │   ├── ConceptIllustration.tsx   # Dynamic morphing SVG vector illustrations
+│   │   ├── EditorialFooter.tsx       # High-contrast forest green SaaS footer
+│   │   ├── EditorialNavbar.tsx       # Floating pill header with high-contrast links
+│   │   ├── HeroBentoSection.tsx      # Forest green hero card & 3D parallax tilt preview
+│   │   ├── InteractiveBentoGrid.tsx  # 3-step pipeline & telemetry bento showcase
+│   │   ├── KineticFlashcards.tsx     # Kinetic deck engine
+│   │   ├── LiveMasteryEngine.tsx     # Unified interactive card deck & tab switcher
+│   │   ├── MultimodalIngestionBar.tsx# Multimodal search bar
+│   │   ├── NodeInspector.tsx         # Node property inspector
+│   │   ├── PeerBroadcastFeed.tsx     # WebRTC peer feed
+│   │   ├── PyTorchMicroSandbox.tsx   # PyTorch MHA module & forward pass simulator
+│   │   ├── ShareAction.tsx           # WhatsApp, Telegram, clipboard share popover
+│   │   └── TelemetryDeck.tsx         # Real-time latency & throughput stats
 │   ├── lib/
-│   │   └── constants.ts              # Presets, testimonials, pipeline steps & sample data
+│   │   ├── constants.ts              # Presets, testimonials, pipeline steps & sample data
+│   │   └── utils.ts                  # Classnames and formatting helpers
 │   └── types/
 │       └── index.ts                  # TypeScript interfaces for cards, quizzes & payloads
-├── public/                           # Static assets and icons
 ├── package.json                      # Project dependencies & scripts
 ├── tailwind.config.ts                # Tailwind design system configuration
 ├── tsconfig.json                     # TypeScript strict configuration
