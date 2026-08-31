@@ -163,8 +163,6 @@ nexusmind-protocol/
 ├── public/
 │   └── assets/
 │       └── preview.png               # High-resolution Retina UI preview screenshot
-├── scripts/
-│   └── capture-screenshot.js         # Automated Puppeteer screenshot generator
 ├── src/
 │   ├── app/
 │   │   ├── api/
